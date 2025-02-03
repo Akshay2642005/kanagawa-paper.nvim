@@ -48,19 +48,19 @@ function M.setup(colors, opts)
 
 		-- Telescope
 		TelescopeTitle = { fg = palette.sumiInk0, bg = palette.dragonBlue, bold = true },
-		TelescopeBorder = { fg = theme.ui.float.fg_border, bg = theme.ui.bg },
+		TelescopeBorder = { fg = theme.ui.float.fg_border, bg = "none" },
 		TelescopeSelection = { link = "CursorLine" },
 		TelescopeSelectionCaret = { link = "CursorLineNr" },
-		TelescopePromptNormal = { bg = theme.ui.bg_p2 },
-		TelescopePromptBorder = { fg = theme.ui.bg_p2, bg = theme.ui.bg_p2 },
+		TelescopePromptNormal = { bg = "none" },
+		TelescopePromptBorder = { fg = theme.ui.bg_p2, bg = "none" },
 		TelescopeResultsClass = { link = "Structure" },
 		TelescopeResultsStruct = { link = "Structure" },
 		TelescopeResultsField = { link = "@field" },
 		TelescopeResultsMethod = { link = "Function" },
 		TelescopeResultsVariable = { link = "@variable" },
 		TeleScopeResultsTitle = { fg = palette.sumiInk0, bg = palette.dragonOrange, bold = true },
-		TelescopeResultsNormal = { fg = theme.ui.fg, bg = theme.ui.bg_p1 },
-		TelescopeResultsBorder = { fg = theme.ui.bg_p2, bg = theme.ui.bg_p1 },
+		TelescopeResultsNormal = { fg = theme.ui.fg, bg = "none" },
+		TelescopeResultsBorder = { fg = theme.ui.bg_p2, bg = "none" },
 		TeleScopePreviewTitle = { fg = palette.sumiInk0, bg = palette.waveAqua1, bold = true },
 		TelescopePreviewNormal = { bg = theme.ui.bg },
 		TelescopePreviewBorder = { bg = theme.ui.bg, fg = theme.ui.bg_p2 },
@@ -185,7 +185,7 @@ function M.setup(colors, opts)
 		-- Cmp
 		CmpCompletion = { link = "Pmenu" },
 		CmpCompletionSel = { fg = "NONE", bg = theme.ui.pmenu.bg_sel },
-		CmpCompletionBorder = { fg = theme.ui.bg_search, bg = theme.ui.pmenu.bg },
+		CmpCompletionBorder = { fg = theme.ui.bg_search, bg = "none" },
 		CmpCompletionThumb = { bg = palette.fujiGray },
 		CmpCompletionSbar = { bg = palette.fujiWhite },
 		CmpDocumentation = { link = "NormalFloat" },
@@ -450,7 +450,7 @@ function M.setup(colors, opts)
 
 		-- Whichkey
 		WhichKey = { fg = theme.ui.picker },
-		WhichKeyBorder = { bg = theme.ui.float.bg, fg = theme.ui.float.fg_border },
+		WhichKeyBorder = { bg = "none", fg = "none" },
 		WhichKeyIcon = { link = "Label" },
 		WhichKeyTitle = { bg = theme.ui.picker, fg = theme.ui.fg_dark, bold = true },
 

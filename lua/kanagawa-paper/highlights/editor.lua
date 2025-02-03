@@ -80,17 +80,17 @@ function M.setup(colors, opts)
 		NormalNC = opts.dimInactive and { fg = theme.ui.fg, bg = not opts.transparent and theme.ui.bg_dim or "NONE" }
 			or { link = "Normal" },
 		-- NormalFloat	Normal text in floating windows.
-		NormalFloat = { fg = theme.ui.float.fg, bg = theme.ui.float.bg },
+		NormalFloat = { fg = theme.ui.float.fg, bg = "none" },
 		-- FloatBorder	Border of floating windows.
-		FloatBorder = { fg = theme.ui.float.fg_border, bg = theme.ui.float.bg_border },
+		FloatBorder = { fg = theme.ui.float.fg_border, bg = "none" },
 		-- FloatTitle	Title of floating windows.
 		FloatTitle = { fg = theme.ui.special, bg = theme.ui.float.bg_border, bold = true },
 		-- FloatFooter	Footer of floating windows.
-		FloatFooter = { fg = theme.ui.nontext, bg = theme.ui.float.bg_border },
+		FloatFooter = { fg = theme.ui.nontext, bg = "none" },
 		-- Pmenu		Popup menu: Normal item.
-		Pmenu = { fg = theme.ui.pmenu.fg, bg = theme.ui.pmenu.bg },
+		Pmenu = { fg = theme.ui.pmenu.fg, bg = "none" },
 		-- PmenuSel	Popup menu: Selected item.
-		PmenuSel = { fg = theme.ui.pmenu.fg_sel, bg = theme.ui.pmenu.bg_sel },
+		PmenuSel = { fg = theme.ui.pmenu.fg_sel, bg = "none" },
 		-- PmenuKind	Popup menu: Normal item "kind".
 		PmenuKind = { fg = theme.ui.fg_dim, bg = theme.ui.pmenu.bg },
 		-- PmenuKindSel	Popup menu: Selected item "kind".
